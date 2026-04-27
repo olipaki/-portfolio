@@ -5,6 +5,8 @@ cd "c:/Users/USER/OneDrive/Desktop/포트폴리오/frontend"
 
 
 npm run dev
+실행 안될경우 npm install
+
 그러면 http://localhost:5173 주소로 브라우저에서 UI가 정상 렌더링돼요.
 
 ------------------------------------안켜졌던 원인
