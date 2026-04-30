@@ -21,7 +21,7 @@ const CAREER = [
     company: "희코러스",
     role: "코러스 보컬 세션",
     desc: "SBS, KBS, OBS, 전국노래자랑 등 방송 및 콘서트 현장에서 다양한 장르의 코러스 보컬 세션으로 참여 및 공연 수행.",
-    highlight: "방송·콘서트 현장 다수 참여",
+    highlight: "방송·콘서트 현장 다수 참여",  
     color: "#d4b8b0",
   },
   {
