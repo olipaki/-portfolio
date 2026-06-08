@@ -592,7 +592,7 @@ export default function Portfolio() {
               </strong>
               을 결합한
               <br />
-              디지털 워크플로우 개선 전문가
+              운영·업무개선형 실무자
             </p>
 
             {/* ─ 통계 ─ */}
@@ -882,7 +882,7 @@ export default function Portfolio() {
                   { k: "생년월일", v: "1990.05.17 (만 36세)" },
                   { k: "위치", v: "서울시 강동구" },
                   { k: "연락처", v: "010-3052-9662" },
-                  { k: "이메일", v: "Se7en3333@naver.com" },
+                  { k: "이메일", v: "se7en3333@naver.com" },
                   { k: "외국어", v: "영어 OPIc IM2 · 중국어 HSK 2급" },
                 ].map((r, i, a) => (
                   <div
@@ -927,6 +927,7 @@ export default function Portfolio() {
                   "OPIc IM2 · 2022",
                   "HSK 2급 · 2024",
                   "운전면허 2종",
+                  "AI agent를 활용한 RAG 개발자양성 과정 수료",
                 ].map((c) => (
                   <span
                     key={c}

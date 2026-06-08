@@ -802,7 +802,7 @@ export default function Portfolio() {
                 { label: "생년월일", value: "1990.05.17" },
                 { label: "위치", value: "서울시 강동구" },
                 { label: "연락처", value: "010-3052-9662" },
-                { label: "이메일", value: "Se7en3333@naver.com", span: true },
+                { label: "이메일", value: "se7en3333@naver.com", span: true },
                 {
                   label: "언어",
                   value: "한국어 · 영어 IM2 · 중국어 HSK2",

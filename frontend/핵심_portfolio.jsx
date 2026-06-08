@@ -600,7 +600,7 @@ export default function Portfolio() {
               </strong>
               을 결합한
               <br />
-              디지털 워크플로우 개선 전문가
+              운영·업무개선형 실무자
             </p>
 
             {/* ─ 통계 ─ */}
@@ -780,11 +780,13 @@ export default function Portfolio() {
                   ...px(0.005),
                 }}
               >
-                반복과 비효율을 줄이고,
+                전사 운영의 흐름을 정리하고,
                 <br />
-                구성원의 참여와
-                <br />
-                몰입을 높이는 운영을 만듭니다.
+                반복과 비효율을 줄입니다.
+                {/* <br />
+                구성원 불편을 개선합니다. */}
+              
+                
               </blockquote>
 
               <div
@@ -818,117 +820,50 @@ export default function Portfolio() {
                 >
                   총무·경영지원 분야{" "}
                   <strong style={{ color: "#3a3830" }}>9년 6개월</strong> 실무
-                  경험을 바탕으로, 단순 운영을 넘어{" "}
+                  경험을 바탕으로,{" "}<br />
+                  복리후생·운영지원·프로세스 개선을 통해 {" "}<br />
+                  효율을 높여왔으며,<br />
                   <strong style={{ color: "#3a3830" }}>
                     AI 기반 업무 자동화
                   </strong>
-                  와 디지털 워크플로우 개선 역할을 목표로 합니다.
+                  와 디지털 워크플로우 개선까지<br />
+                  연결 할 수 있는 역략을 갖추고 있습니다.
                 </p>
               </div>
 
               <div
                 style={{
-                  background: "#fff",
-                  border: "1px solid rgba(107,154,107,0.2)",
-                  borderRadius: 6,
-                  padding: "24px 28px",
-                  borderLeft: "4px solid #6b9a6b",
+                  display: "flex",
+                  flexWrap: "wrap",
+                  gap: 8,
+                  marginTop: 4,
                 }}
               >
-                <p
-                  style={{
-                    fontSize: ".72rem",
-                    letterSpacing: ".14em",
-                    textTransform: "uppercase",
-                    color: "#6b9a6b",
-                    marginBottom: 16,
-                  }}
-                >
-                  Why This Role
-                </p>
-
-                <div
-                  style={{
-                    display: "flex",
-                    flexWrap: "wrap",
-                    gap: 8,
-                    marginBottom: 20,
-                  }}
-                >
-                  {[
-                    "전사 운영·복리후생·참여형 이벤트 경험",
-                    "구성원 체감 중심 개선",
-                    "참여 유도·불편 해소·운영 고도화",
-                    "몰입도 높은 조직문화 운영 기여",
-                  ].map((kw) => (
-                    <span
-                      key={kw}
-                      style={{
-                        padding: "4px 12px",
-                        background: "rgba(107,154,107,0.08)",
-                        border: "1px solid rgba(107,154,107,0.25)",
-                        borderRadius: 20,
-                        fontSize: ".65rem",
-                        letterSpacing: ".06em",
-                        color: "#6b9a6b",
-                      }}
-                    >
-                      {kw}
-                    </span>
-                  ))}
-                </div>
-
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: 12,
-                  }}
-                >
-                  {[
-                    { title: "전사 참여형 이벤트 운영", desc: "800여 명 대상 성수기 콘도 추첨, 시즌성 사내 이벤트 기획·운영" },
-                    { title: "구성원 경험 중심 운영", desc: "복리후생, 출장, 퀵서비스, 우산 대여 등 구성원 접점 운영" },
-                    { title: "다자간 협업·조율", desc: "본사, 수출본부, 해외법인, 외부업체와의 커뮤니케이션 및 문제 해결" },
-                    { title: "운영 프로세스 개선", desc: "명함 발급 자동화, QR 우산 대여, 주차 시스템 전환" },
-                    { title: "프로젝트 리딩", desc: "AI 프로젝트 팀장, 서비스 기획·조율·배포·사용자 피드백까지 수행" },
-                  ].map((item, i) => (
-                    <div
-                      key={i}
-                      style={{ display: "flex", gap: 10, alignItems: "flex-start" }}
-                    >
-                      <span
-                        style={{
-                          color: "#6b9a6b",
-                          fontSize: ".7rem",
-                          marginTop: 3,
-                          flexShrink: 0,
-                        }}
-                      >
-                        ✦
-                      </span>
-                      <div>
-                        <span
-                          style={{
-                            fontSize: ".82rem",
-                            fontWeight: 600,
-                            color: "#2c3028",
-                          }}
-                        >
-                          {item.title}
-                        </span>
-                        <span
-                          style={{
-                            fontSize: ".79rem",
-                            color: "#7a7a72",
-                            marginLeft: 8,
-                          }}
-                        >
-                          {item.desc}
-                        </span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                {[
+                  "전사 운영·복리후생·참여형 이벤트 경험",
+                  "구성원 체감 중심 개선",
+                  "다자간 협업·조율",
+                  "해외법인/주재원 지원",
+                  "참여 유도·운영 고도화",
+                  "몰입도 높은 조직문화 운영 기여",
+                  "운영 프로세스 개선",
+                  "AI 프로젝트 리딩",
+                ].map((kw) => (
+                  <span
+                    key={kw}
+                    style={{
+                      padding: "5px 13px",
+                      background: "#faf8f5",
+                      border: "1px solid rgba(107,154,107,0.28)",
+                      borderRadius: 20,
+                      fontSize: ".68rem",
+                      letterSpacing: ".05em",
+                      color: "#1a1a1a",
+                    }}
+                  >
+                    {kw}
+                  </span>
+                ))}
               </div>
             </div>
 
@@ -960,7 +895,7 @@ export default function Portfolio() {
                   { k: "생년월일", v: "1990.05.17 (만 36세)" },
                   { k: "위치", v: "서울시 강동구" },
                   { k: "연락처", v: "010-3052-9662" },
-                  { k: "이메일", v: "Se7en3333@naver.com" },
+                  { k: "이메일", v: "se7en3333@naver.com" },
                   { k: "외국어", v: "영어 OPIc IM2 · 중국어 HSK 2급" },
                 ].map((r, i, a) => (
                   <div
@@ -1005,6 +940,7 @@ export default function Portfolio() {
                   "OPIc IM2 · 2022",
                   "HSK 2급 · 2024",
                   "운전면허 2종",
+                  "서울경제진흥원- AI agent SW개발자 과정 수료",
                 ].map((c) => (
                   <span
                     key={c}
@@ -1185,7 +1121,7 @@ export default function Portfolio() {
           <SectionHead
             num="03"
             title="핵심역량"
-            sub="실무에서 직접 만들고, 운영하고, 개선한 경험들"
+            sub="실무에서 직접 구축하고, 운영하며, 개선한 자동화 경험"
           />
 
           {/* 상단 강조 배너 */}
@@ -1198,36 +1134,28 @@ export default function Portfolio() {
               padding: "20px 28px",
               marginBottom: 32,
               display: "flex",
+              justifyContent: "center",
               alignItems: "center",
-              gap: 16,
             }}
           >
-            <div
-              style={{
-                width: 4,
-                height: 48,
-                background: "linear-gradient(#6b9a6b,#7a8fab)",
-                borderRadius: 2,
-                flexShrink: 0,
-              }}
-            />
             <p
               style={{
                 fontFamily: "'Noto Serif KR',serif",
                 fontSize: ".95rem",
                 color: "#4a4840",
                 lineHeight: 1.85,
+                textAlign: "center",
               }}
             >
               비개발자이지만{" "}
               <strong style={{ color: "#6b9a6b" }}>
-                현장의 불편을 직접 관찰하고
+                현장의 반복 업무와 불편을 직접 관찰하고,<br />
               </strong>
-              , Google 도구와 Apps Script·Python으로{" "}
+              Google 도구와 Apps Script·Python을 활용해{" "}
               <strong style={{ color: "#6b9a6b" }}>
-                실무 자동화를 직접 구축
+                실무 자동화를 직접 구축하여{" "}
               </strong>
-              한 경험을 보유하고 있습니다.
+              운영 개선을 수행해왔습니다.
             </p>
           </div>
 
@@ -1243,43 +1171,43 @@ export default function Portfolio() {
             {[
               {
                 icon: "⚙️",
-                tag: "프로세스 디지털화",
+                tag: "프로세스 자동화",
                 color: "#6b9a6b",
                 bg: "rgba(107,154,107,0.06)",
                 border: "rgba(107,154,107,0.25)",
-                title: "사내 운영 프로세스 디지털화 및 자동화",
-                desc: "구성원 편의를 높이기 위한 사내 운영 프로세스를 디지털화하고 자동화한 경험.",
-                keywords: ["운영 디지털화", "자동화", "행정 효율화"],
+                title: "사내 운영 프로세스 자동화 구축",
+                desc: "명함 발급, 운영 요청, 행정 흐름 등 반복 업무를 디지털화하여 처리 속도와 운영 효율을 높였습니다.",
+                keywords: ["운영 자동화", "행정 효율화", "디지털 전환"],
               },
               {
                 icon: "🔄",
-                tag: "이용 흐름 재설계",
+                tag: "이용 흐름 개선",
                 color: "#b07a6e",
                 bg: "rgba(176,122,110,0.06)",
                 border: "rgba(176,122,110,0.25)",
-                title: "사내 서비스 이용 흐름 재설계 및 운영 효율화",
-                desc: "실제 사용자 관점에서 불편 요소를 파악하고 다수 인원이 이용하는 사내 서비스의 이용 흐름 재설계 및 운영 효율화 경험.",
-                keywords: ["UX 개선", "프로세스 재설계", "운영 효율화"],
+                title: "사용자 중심의 이용 흐름 개선",
+                desc: "다수 인원이 이용하는 사내 서비스에서 불편 요소를 파악하고, 이용 흐름과 관리 방식을 재설계했습니다.",
+                keywords: ["사용자 중심", "프로세스 개선", "운영 효율화"],
               },
               {
                 icon: "🛠️",
-                tag: "Google 도구 활용",
+                tag: "Google 업무 자동화",
                 color: "#7a8fab",
                 bg: "rgba(122,143,171,0.06)",
                 border: "rgba(122,143,171,0.25)",
-                title: "Google Forms · Sheets · Apps Script 실무 자동화",
-                desc: "Google Forms / Google Sheets / Apps Script를 활용한 실무형 자동화 구축 경험",
-                keywords: ["Google Forms", "Google Sheets", "Apps Script"],
+                title: "입력부터 발송까지 자동화된 Google 업무 프로세스 구축",
+                desc: "Google Forms, Sheets, Apps Script를 연동해 사용자 입력 정보가 자동 취합되고, 후속 메일이 자동 발송되도록 실무 프로세스를 구현했습니다.",
+                keywords: ["업무 자동화", "자동메일 발송", "Google Workspace"],
               },
               {
                 icon: "👁️",
-                tag: "현장 관찰 기반 개선",
+                tag: "현장 관찰 기반 문제 해결",
                 color: "#a08060",
                 bg: "rgba(160,128,96,0.06)",
                 border: "rgba(160,128,96,0.25)",
-                title: "현장 반복 불편 관찰 → 사용 경험 중심 개선 실행",
-                desc: "현장의 반복 불편을 관찰하고 실제 사용 경험 중심으로 개선안을 실행한 경험",
-                keywords: ["현장 관찰", "사용자 중심", "문제 해결"],
+                title: "현장 관찰을 통한 운영 개선 실행",
+                desc: "반복적으로 발생하는 불편과 누락 지점을 관찰하고, 실제 사용자의 입장에서 개선안을 적용했습니다.",
+                keywords: ["현장 관찰", "문제 해결", "사용 경험 개선"],
               },
             ].map((item, i) => (
               <div
