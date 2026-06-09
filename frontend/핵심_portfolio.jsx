@@ -1170,44 +1170,40 @@ export default function Portfolio() {
           >
             {[
               {
-                icon: "⚙️",
-                tag: "프로세스 자동화",
+                icon: "🏢",
                 color: "#6b9a6b",
                 bg: "rgba(107,154,107,0.06)",
                 border: "rgba(107,154,107,0.25)",
-                title: "사내 운영 프로세스 자동화 구축",
-                desc: "명함 발급, 운영 요청, 행정 흐름 등 반복 업무를 디지털화하여 처리 속도와 운영 효율을 높였습니다.",
-                keywords: ["운영 자동화", "행정 효율화", "디지털 전환"],
+                title: "오피스 운영 총괄",
+                desc: "본사와 분리된 수출본부 오피스의 총무 운영 전반을 단독으로 담당하며, 임대차 갱신부터 업무환경 운영, 외부업체 대응까지 실질 운영 책임을 수행했습니다.",
+                keywords: ["오피스 임대차", "업무환경 운영", "시설·주차 관리", "사내 공사·환경 개선", "인테리어·설비", "협력업체·렌탈 계약", "운영 이슈 대응"],
               },
               {
                 icon: "🔄",
-                tag: "이용 흐름 개선",
                 color: "#b07a6e",
                 bg: "rgba(176,122,110,0.06)",
                 border: "rgba(176,122,110,0.25)",
-                title: "사용자 중심의 이용 흐름 개선",
-                desc: "다수 인원이 이용하는 사내 서비스에서 불편 요소를 파악하고, 이용 흐름과 관리 방식을 재설계했습니다.",
-                keywords: ["사용자 중심", "프로세스 개선", "운영 효율화"],
+                title: "사내 서비스 이용 흐름 개선",
+                desc: "다수 인원이 이용하는 사내 서비스에서 반복되는 불편 요소를 파악하고, 이용 방식과 관리 흐름을 재설계해 운영 효율과 사용자 편의성을 높였습니다.",
+                keywords: ["사용자 중심", "이용 흐름 재설계", "운영 효율화"],
               },
               {
                 icon: "🛠️",
-                tag: "Google 업무 자동화",
                 color: "#7a8fab",
                 bg: "rgba(122,143,171,0.06)",
                 border: "rgba(122,143,171,0.25)",
-                title: "입력부터 발송까지 자동화된 Google 업무 프로세스 구축",
-                desc: "Google Forms, Sheets, Apps Script를 연동해 사용자 입력 정보가 자동 취합되고, 후속 메일이 자동 발송되도록 실무 프로세스를 구현했습니다.",
-                keywords: ["업무 자동화", "자동메일 발송", "Google Workspace"],
+                title: "Google 기반 업무 자동화",
+                desc: "Google Forms, Sheets, Apps Script를 연동해 사용자 입력이 자동 취합되고, 후속 메일이 자동 발송되도록 실무 프로세스를 구축했습니다.",
+                keywords: ["업무 자동화", "자동 메일 발송", "Google Workspace"],
               },
               {
-                icon: "👁️",
-                tag: "현장 관찰 기반 문제 해결",
+                icon: "🤖",
                 color: "#a08060",
                 bg: "rgba(160,128,96,0.06)",
                 border: "rgba(160,128,96,0.25)",
-                title: "현장 관찰을 통한 운영 개선 실행",
-                desc: "반복적으로 발생하는 불편과 누락 지점을 관찰하고, 실제 사용자의 입장에서 개선안을 적용했습니다.",
-                keywords: ["현장 관찰", "문제 해결", "사용 경험 개선"],
+                title: "AI 기반 업무 개선 확장",
+                desc: "AI Agent·RAG 역량을 바탕으로 실무 자동화 경험을 AI 활용 업무 개선으로 확장했으며, 현업에서 활용 가능한 웹서비스를 직접 구현·배포했습니다.",
+                keywords: ["AI Agent", "RAG", "웹서비스 구현", "서비스 배포"],
               },
             ].map((item, i) => (
               <div
@@ -1231,28 +1227,6 @@ export default function Portfolio() {
                   textAlign: "left",
                 }}
               >
-                {/* Tag & icon */}
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 8,
-                  }}
-                >
-                  <span
-                    style={{
-                      padding: "4px 12px",
-                      background: item.bg,
-                      border: `1px solid ${item.border}`,
-                      borderRadius: 20,
-                      fontSize: ".65rem",
-                      letterSpacing: ".1em",
-                      color: item.color,
-                    }}
-                  >
-                    {item.icon} {item.tag}
-                  </span>
-                </div>
                 {/* Title */}
                 <h3
                   style={{
@@ -1268,7 +1242,7 @@ export default function Portfolio() {
                     width: "100%",
                   }}
                 >
-                  {item.title}
+                  {item.icon} {item.title}
                 </h3>
                 {/* Desc */}
                 <p
@@ -1314,34 +1288,6 @@ export default function Portfolio() {
             ))}
           </div>
 
-          {/* 하단 연결 메시지 */}
-          <div
-            style={{
-              background: "#fff",
-              border: "1px solid rgba(107,154,107,0.2)",
-              borderRadius: 6,
-              padding: "18px 24px",
-              display: "flex",
-              alignItems: "center",
-              gap: 16,
-            }}
-          >
-            <span style={{ fontSize: "1.2rem" }}>💡</span>
-            <p
-              style={{ fontSize: ".83rem", color: "#5a5850", lineHeight: 1.8 }}
-            >
-              위 역량들은 현재 수료 중인{" "}
-              <strong style={{ color: "#6b9a6b" }}>
-                AI Agent · RAG 양성과정
-              </strong>
-              과 결합되어,
-              <strong style={{ color: "#6b9a6b" }}>
-                {" "}
-                단순 자동화를 넘어 AI 기반 업무 혁신
-              </strong>
-              으로 발전시키고자 합니다.
-            </p>
-          </div>
         </div>
       </Slide>
 
