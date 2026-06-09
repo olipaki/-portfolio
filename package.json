@@ -1,0 +1,23 @@
+{
+  "name": "-portfolio",
+  "version": "1.0.0",
+  "description": "방법: Vite 개발 서버로 실행 1. 터미널에서 frontend 폴더로 이동 cd \"c:/Users/USER/OneDrive/Desktop/포트폴리오/frontend\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olipaki/-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olipaki/-portfolio/issues"
+  },
+  "homepage": "https://github.com/olipaki/-portfolio#readme",
+  "dependencies": {
+    "puppeteer": "^25.1.0"
+  }
+}
