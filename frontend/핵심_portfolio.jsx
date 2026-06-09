@@ -9,43 +9,60 @@ const CAREER = [
     period: "2016.07 — 2025.12",
     years: "9년 6개월",
     company: "신성통상(주)",
-    role: "대리 · 임원비서 → 총무팀",
+    role: "대리 · 임원비서 / 총무·경영지원",
     tasks: [
-      "전사 행정지원·복리후생·출장관리",
-      "인사·총무지원 / 부서 간 조율",
-      "임원 비서 · 조직 운영 이해",
+      "경영진 지원 경험을 바탕으로 조직 운영 구조, 보고 체계, 우선순위 조율 역량 축적",
+      "전사 운영 지원, 복리후생, 출장관리, 인사·총무지원 수행",
+      "본사·수출본부·유관부서 간 운영 조율 및 이슈 대응",
+      "수출본부 오피스 운영 전반 단독 담당",
+      "운영 프로세스 개선 및 업무 효율화 수행",
     ],
-    highlight: "출장 정산 자동화 매크로 직접 개발 → 오류 사전 방지 시스템 구축",
+    highlight: "출장 정산 자동화 구축으로 오류 사전 방지 및 검증 효율 향상",
     color: "#6b9a6b",
   },
   {
-    period: "2012.08 — 2013.09",
-    years: "1년 2개월",
+    periods: ["2010.03 — 2011.11", "2012.08 — 2013.09"],
+    years: "총 3년 1개월",
     company: "포에버21코리아리테일(유)",
-    role: "ACC VMD · 2차",
+    role: "ACC VMD",
     tasks: [
-      "해외 바이어 응대 / 판매 분석·리포트",
-      "발주·재고 관리 / 고객 응대",
+      "해외 바이어 응대 및 판매 분석·리포트 작성",
+      "발주·재고 관리 및 고객 응대",
+      "매장 오픈·리뉴얼 셋팅 및 현장 운영 경험",
     ],
-    highlight:
-      "명동점 리모델링 폐점·리뉴얼 오픈 셋팅 / 일 매출 1억 5천만 원 달성",
+    highlight: "신사점 오픈 셋팅, 명동점 리뉴얼 오픈 셋팅 및 일 매출 1억 5천만 원 달성",
     color: "#b07a6e",
   },
   {
-    period: "2010.03 — 2011.11",
-    years: "1년 9개월",
-    company: "포에버21코리아리테일(유)",
-    role: "ACC VMD · 1차",
+    periods: ["2014.05 — 2016.07", "2016.01 — 2016.06"],
+    years: "방송·공연",
+    company: "방송·공연 활동",
+    role: "코러스 / 뮤지컬 배우",
     tasks: [
-      "해외 바이어 응대 / 판매 분석·리포트",
-      "발주·재고 관리 / 고객 응대",
+      "SBS·KBS·OBS 등 방송 코러스 및 전국 공연 참여",
+      "장윤정·박현빈 콘서트 코러스 수행",
+      "가족뮤지컬 겨울왕국 안나 역 / 전국·제주 순회공연",
     ],
-    highlight: "신사점 오픈 셋팅 주도",
-    color: "#7a8fab",
+    highlight: "다양한 무대와 현장에서 공연 수행 및 대외 협업 경험 축적",
+    color: "#8a7ab0",
   },
 ];
 
 const SKILLS = [
+  {
+    cat: "Business · Admin",
+    color: "#b07a6e",
+    bg: "#fdf3f1",
+    items: [
+      "전사 행정지원 (9년+)",
+      "임원 비서·일정 관리 / 전사 운영 지원",
+      "출장 관리·정산",
+      "복리후생·인사총무 지원 / 신입 온보딩·교육 지원",
+      "부서 간 조율·운영 대응",
+      "조직 운영 및 보고 체계 이해",
+      "오피스 운영 및 업무환경 관리",
+    ],
+  },
   {
     cat: "AI · Tech",
     color: "#6b9a6b",
@@ -54,36 +71,39 @@ const SKILLS = [
       "Python",
       "AI Agent 설계·구현",
       "RAG 파이프라인",
-      "LLM 프롬프트 엔지니어링",
+      "LLM 프롬프트 설계",
       "업무 자동화 매크로 개발",
-      "ITQ (한글·엑셀·파워포인트)",
-      "GTQ 그래픽기술자격 2급",
+      "Google Forms·Sheets·Apps Script 자동화",
+      "디지털 워크플로우 개선",
     ],
   },
   {
-    cat: "Business · Admin",
-    color: "#b07a6e",
-    bg: "#fdf3f1",
+    cat: "Certificates · Training",
+    color: "#a08060",
+    bg: "#faf6f2",
     items: [
-      "전사 행정지원 (9년+)",
-      "임원 비서·일정 관리",
-      "출장 관리·정산",
-      "복리후생·인사총무 지원",
-      "부서 간 조율·운영 대응",
-      "조직 운영 및 의사결정 구조 이해",
+      "AI Agent · RAG 양성과정 수료 완료 (2025–2026)",
+      "그룹사 승격(대리) 교육 수료 (2022.01)",
+      "ITQ(한글·엑셀·파워포인트) 수료 (2021.07)",
+      "GTQ 2급 취득 (2021.04)",
+      "컬러리스트 실기 과정 수료 (2020.05)",
+      "AFPK 교육과정 수료 (2013.05)",
+      "OPIc IM2 (영어, 2022)",
+      "新HSK 2급 (중국어, 2024)",
+      "자동차운전면허 2종 보통",
     ],
   },
   {
-    cat: "Creative · Language",
+    cat: "Operations · Analysis",
     color: "#7a8fab",
     bg: "#f0f3f8",
     items: [
       "ACC VMD · 디스플레이 기획",
-      "컬러리스트 실기 과정 수료",
       "발주·재고·판매 분석",
-      "OPIc IM2 (영어, 2022)",
-      "新HSK 2급 (중국어, 2024)",
-      "자동차운전면허 2종 보통",
+      "해외 바이어 응대",
+      "매장 오픈·리뉴얼 셋업",
+      "현장 관찰 기반 개선",
+      "사용자 관점 운영 이해",
     ],
   },
 ];
@@ -92,19 +112,19 @@ const PROJECTS = [
   {
     id: "uDGOEN-_bQ8",
     num: "01",
-    tag: "AI Agent",
-    title: "AI Agent 기반\n업무 자동화 서비스",
-    desc: "실무에서 경험한 반복 업무 문제를 AI Agent로 해결한 프로젝트. 총무·행정 도메인 지식을 기반으로 서비스 구조를 설계하고 구현했습니다.",
-    techs: ["AI Agent", "Python", "자동화", "워크플로우"],
+    tag: "HR SERVICE",
+    title: "AI 기반 채용 운영 서비스",
+    desc: "채용·면접 업무의 반복 흐름을 줄이기 위해 기획한 HR 서비스로, 팀 프로젝트에서 기획, UX, 기능 설계 전반을 담당했습니다.",
+    techs: ["채용 운영", "면접 일정 관리", "AI 질문 생성", "UX 설계", "서비스 기획"],
     color: "#6b9a6b",
   },
   {
     id: "E_vB3BvMr2Q",
     num: "02",
-    tag: "RAG",
-    title: "RAG 기반\n지식 검색 AI 서비스",
-    desc: "사내 문서·규정 데이터를 활용한 RAG 기반 검색 서비스. 실제 업무 데이터를 적용해 정보 접근성과 응답 정확도를 높이는 방식으로 설계했습니다.",
-    techs: ["RAG", "LLM", "벡터DB", "Python"],
+    tag: "AI AUTOMATION",
+    title: "AI 기반 수출 데이터 자동화 서비스",
+    desc: "실제 수출 중견기업 QA팀에서 사용하는 데이터를 분석해 주간 리포트를 자동 생성하고, 정리된 결과를 자동 메일로 발송하도록 구현한 현업 배포 서비스입니다.",
+    techs: ["데이터 자동 분석", "주간 리포트 자동화", "자동 메일 발송", "현업 배포", "QA팀 활용중"],
     color: "#b07a6e",
   },
 ];
@@ -116,7 +136,6 @@ const SECTIONS = [
   "역량",
   "Projects",
   "Skills",
-  "Contact",
 ];
 
 /* ── CURSOR ── */
@@ -892,11 +911,13 @@ export default function Portfolio() {
                 </div>
                 {[
                   { k: "성명", v: "박세형 (Park Sehyung)" },
-                  { k: "생년월일", v: "1990.05.17 (만 36세)" },
+                  { k: "생년월일", v: "1990.05.17" },
                   { k: "위치", v: "서울시 강동구" },
                   { k: "연락처", v: "010-3052-9662" },
                   { k: "이메일", v: "se7en3333@naver.com" },
-                  { k: "외국어", v: "영어 OPIc IM2 · 중국어 HSK 2급" },
+                  { k: "학력", v: "서울문화예술대학교 실용음악학과 학사 졸업" },
+                  { k: "주요 교육", v: "서울경제진흥원 AI Agent SW개발자 과정 수료" },
+                  { k: "외국어", v: "영어 OPIc IM2 / 중국어 HSK 2급" },
                 ].map((r, i, a) => (
                   <div
                     key={r.k}
@@ -926,37 +947,6 @@ export default function Portfolio() {
                 ))}
               </div>
 
-              {/* 자격·면허 */}
-              <div
-                style={{
-                  marginTop: 20,
-                  display: "flex",
-                  flexWrap: "wrap",
-                  gap: 10,
-                }}
-              >
-                {[
-                  "GTQ 2급 · 2022",
-                  "OPIc IM2 · 2022",
-                  "HSK 2급 · 2024",
-                  "운전면허 2종",
-                  "서울경제진흥원- AI agent SW개발자 과정 수료",
-                ].map((c) => (
-                  <span
-                    key={c}
-                    style={{
-                      padding: "6px 14px",
-                      background: "#fff",
-                      border: "1px solid rgba(122,143,171,0.35)",
-                      borderRadius: 20,
-                      fontSize: ".68rem",
-                      color: "#7a8fab",
-                    }}
-                  >
-                    {c}
-                  </span>
-                ))}
-              </div>
             </div>
           </div>
         </div>
@@ -968,7 +958,7 @@ export default function Portfolio() {
           <SectionHead
             num="02"
             title="Career"
-            sub={`총 경력 12년 5개월 · 행정/총무 9년 6개월 + VMD 3년 1개월`}
+            sub={`총 경력 12년 5개월 · 총무·경영지원 9년 6개월 / 리테일 VMD 3년 1개월`}
           />
 
           <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
@@ -1027,15 +1017,30 @@ export default function Portfolio() {
                     </span>
                   </div>
                   <div style={{ textAlign: "right", flexShrink: 0 }}>
-                    <p
-                      style={{
-                        fontSize: ".7rem",
-                        color: "#aaa8a0",
-                        marginBottom: 2,
-                      }}
-                    >
-                      {c.period}
-                    </p>
+                    {c.periods ? (
+                      c.periods.map((p, pi) => (
+                        <p
+                          key={pi}
+                          style={{
+                            fontSize: ".7rem",
+                            color: "#aaa8a0",
+                            marginBottom: 2,
+                          }}
+                        >
+                          {p}
+                        </p>
+                      ))
+                    ) : (
+                      <p
+                        style={{
+                          fontSize: ".7rem",
+                          color: "#aaa8a0",
+                          marginBottom: 2,
+                        }}
+                      >
+                        {c.period}
+                      </p>
+                    )}
                     <p
                       style={{
                         fontFamily: "'Cormorant Garamond',serif",
@@ -1049,60 +1054,68 @@ export default function Portfolio() {
                   </div>
                 </div>
                 {/* Body */}
-                <div style={{ padding: "20px 28px" }}>
-                  <div
+                <div style={{ padding: "22px 28px 24px" }}>
+                  <ul
                     style={{
-                      display: "grid",
-                      gridTemplateColumns: "1fr auto",
-                      gap: 24,
-                      alignItems: "start",
+                      listStyle: "none",
+                      padding: 0,
+                      margin: "0 0 18px 0",
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: 9,
                     }}
                   >
-                    <div>
-                      <div
+                    {c.tasks.map((t) => (
+                      <li
+                        key={t}
                         style={{
                           display: "flex",
-                          flexWrap: "wrap",
-                          gap: 8,
-                          marginBottom: 14,
+                          alignItems: "flex-start",
+                          gap: 10,
                         }}
                       >
-                        {c.tasks.map((t) => (
-                          <span
-                            key={t}
-                            style={{
-                              padding: "4px 12px",
-                              background: `${c.color}0f`,
-                              border: `1px solid ${c.color}28`,
-                              borderRadius: 20,
-                              fontSize: ".7rem",
-                              color: c.color,
-                            }}
-                          >
-                            {t}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
+                        <span
+                          style={{
+                            color: c.color,
+                            fontSize: ".55rem",
+                            marginTop: 5,
+                            flexShrink: 0,
+                            opacity: 0.85,
+                          }}
+                        >
+                          ◆
+                        </span>
+                        <span
+                          style={{
+                            fontSize: ".82rem",
+                            color: "#4a4840",
+                            lineHeight: 1.75,
+                          }}
+                        >
+                          {t}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
                   {/* Highlight */}
                   <div
                     style={{
                       background: `${c.color}0c`,
-                      border: `1px solid ${c.color}30`,
-                      borderRadius: 4,
+                      borderLeft: `3px solid ${c.color}`,
+                      borderRadius: "0 4px 4px 0",
                       padding: "10px 16px",
-                      display: "inline-flex",
+                      display: "flex",
                       alignItems: "center",
                       gap: 10,
                     }}
                   >
-                    <span style={{ color: c.color, fontSize: "1rem" }}>✦</span>
+                    <span style={{ color: c.color, fontSize: ".9rem" }}>✦</span>
                     <span
                       style={{
-                        fontSize: ".78rem",
+                        fontSize: ".8rem",
                         color: "#3a3830",
-                        fontWeight: 400,
+                        fontWeight: 500,
+                        lineHeight: 1.6,
                       }}
                     >
                       {c.highlight}
@@ -1321,8 +1334,8 @@ export default function Portfolio() {
             <p
               style={{ fontSize: ".85rem", color: "#5a5850", lineHeight: 1.8 }}
             >
-              비전공자로서 실무 경험을 기반으로{" "}
-              <strong>실제 현업 문제를 AI로 해결</strong>하는 관점으로
+              실무 경험에서 나온 현업 문제를{" "}
+              <strong>AI로 해결</strong>하기 위해
               기획·구현한 2개의 프로젝트입니다.
             </p>
           </div>
@@ -1509,7 +1522,7 @@ export default function Portfolio() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(3,1fr)",
+              gridTemplateColumns: "repeat(2,1fr)",
               gap: 24,
               marginBottom: 36,
             }}
@@ -1599,366 +1612,9 @@ export default function Portfolio() {
             ))}
           </div>
 
-          {/* Training */}
-          <div>
-            <p
-              style={{
-                fontSize: ".63rem",
-                letterSpacing: ".16em",
-                textTransform: "uppercase",
-                color: "#aaa8a0",
-                marginBottom: 14,
-              }}
-            >
-              직업훈련 · Training
-            </p>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 12 }}>
-              {[
-                { p: "2025", n: "AI AGENT · RAG 양성과정", o: "수료 예정" },
-                {
-                  p: "2021.07",
-                  n: "ITQ(한글·엑셀·파워포인트)",
-                  o: "강동여성인력개발센터",
-                },
-                {
-                  p: "2021.04",
-                  n: "포토샵 & GTQ 자격증",
-                  o: "강동여성인력개발센터",
-                },
-                {
-                  p: "2020.05",
-                  n: "컬러리스트 실기 과정",
-                  o: "그린컴퓨터아트학원",
-                },
-                {
-                  p: "2022.01",
-                  n: "그룹사 승격(대리) 교육",
-                  o: "신성통상(주)",
-                },
-              ].map((t) => (
-                <div
-                  key={t.n}
-                  style={{
-                    padding: "12px 18px",
-                    background: "#fff",
-                    border: "1px solid rgba(0,0,0,0.07)",
-                    borderRadius: 4,
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 14,
-                    transition: "border-color .2s",
-                  }}
-                  onMouseEnter={(e) =>
-                    (e.currentTarget.style.borderColor =
-                      "rgba(107,154,107,0.4)")
-                  }
-                  onMouseLeave={(e) =>
-                    (e.currentTarget.style.borderColor = "rgba(0,0,0,0.07)")
-                  }
-                >
-                  <span
-                    style={{
-                      fontFamily: "'Cormorant Garamond',serif",
-                      fontSize: ".85rem",
-                      fontStyle: "italic",
-                      color: "#6b9a6b",
-                      minWidth: 50,
-                    }}
-                  >
-                    {t.p}
-                  </span>
-                  <div>
-                    <p style={{ fontSize: ".82rem", color: "#3a3830" }}>
-                      {t.n}
-                    </p>
-                    <p
-                      style={{
-                        fontSize: ".65rem",
-                        color: "#aaa8a0",
-                        marginTop: 2,
-                      }}
-                    >
-                      {t.o}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </Slide>
 
-      {/* ════════ S6 · CONTACT ════════ */}
-      <Slide id="s6" bg="rgba(107,154,107,0.06)">
-        <div
-          style={{
-            maxWidth: 1200,
-            width: "100%",
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: 72,
-            alignItems: "center",
-          }}
-        >
-          {/* Left */}
-          <div>
-            <p
-              style={{
-                fontSize: ".65rem",
-                letterSpacing: ".2em",
-                textTransform: "uppercase",
-                color: "#6b9a6b",
-                marginBottom: 18,
-              }}
-            >
-              Contact
-            </p>
-            <h2
-              style={{
-                fontFamily: "'Cormorant Garamond',serif",
-                fontSize: "clamp(2.4rem,4vw,3.6rem)",
-                fontWeight: 300,
-                color: "#2c3028",
-                lineHeight: 1.2,
-                marginBottom: 24,
-                ...px(-0.008),
-              }}
-            >
-              함께 일하고
-              <br />
-              싶으시다면
-            </h2>
-            <p
-              style={{
-                fontSize: ".88rem",
-                color: "#7a7870",
-                lineHeight: 1.95,
-                marginBottom: 40,
-              }}
-            >
-              12년 5개월의 실무 경험과 AI 역량을 결합하여
-              <br />더 나은 업무 환경을 만들어가겠습니다.
-            </p>
-
-            {/* Education */}
-            <div
-              style={{
-                background: "#fff",
-                borderRadius: 6,
-                overflow: "hidden",
-                border: "1px solid rgba(107,154,107,0.2)",
-              }}
-            >
-              <div
-                style={{
-                  padding: "12px 20px",
-                  background: "rgba(107,154,107,0.08)",
-                  borderBottom: "1px solid rgba(107,154,107,0.15)",
-                }}
-              >
-                <p
-                  style={{
-                    fontSize: ".62rem",
-                    letterSpacing: ".15em",
-                    textTransform: "uppercase",
-                    color: "#6b9a6b",
-                  }}
-                >
-                  Education
-                </p>
-              </div>
-              {[
-                { y: "2025", n: "AI AGENT · RAG 양성과정", s: "수료 예정" },
-                { y: "2020", n: "컬러리스트 실기 / AFPK 과정", s: "수료" },
-                { y: "2017", n: "서울문화예술대학교", s: "실용음악학과 졸업" },
-                { y: "2009", n: "영파여자고등학교", s: "인문계 졸업" },
-              ].map((e, i, a) => (
-                <div
-                  key={e.y}
-                  style={{
-                    display: "flex",
-                    gap: 16,
-                    alignItems: "baseline",
-                    padding: "11px 20px",
-                    borderBottom:
-                      i < a.length - 1 ? "1px solid rgba(0,0,0,0.05)" : "none",
-                  }}
-                >
-                  <span
-                    style={{
-                      fontFamily: "'Cormorant Garamond',serif",
-                      fontSize: ".9rem",
-                      fontStyle: "italic",
-                      color: "#6b9a6b",
-                      minWidth: 38,
-                    }}
-                  >
-                    {e.y}
-                  </span>
-                  <div>
-                    <p style={{ fontSize: ".83rem", color: "#3a3830" }}>
-                      {e.n}
-                    </p>
-                    <p
-                      style={{
-                        fontSize: ".68rem",
-                        color: "#aaa8a0",
-                        marginTop: 2,
-                      }}
-                    >
-                      {e.s}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Right */}
-          <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-            {[
-              {
-                icon: "✉",
-                label: "Email",
-                value: "Se7en3333@naver.com",
-                href: "mailto:Se7en3333@naver.com",
-                c: "#6b9a6b",
-              },
-              {
-                icon: "✆",
-                label: "Phone",
-                value: "010-3052-9662",
-                href: "tel:01030529662",
-                c: "#b07a6e",
-              },
-              {
-                icon: "⌖",
-                label: "Location",
-                value: "서울시 강동구",
-                c: "#7a8fab",
-              },
-            ].map((item, i) => (
-              <a
-                key={i}
-                href={item.href || "#"}
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 20,
-                  padding: "22px 24px",
-                  background: "#fff",
-                  border: "1px solid rgba(0,0,0,0.07)",
-                  borderRadius: 6,
-                  textDecoration: "none",
-                  transition: "all .25s",
-                  cursor: item.href ? "none" : "default",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = `${item.c}40`;
-                  e.currentTarget.style.boxShadow = `0 4px 20px ${item.c}18`;
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = "rgba(0,0,0,0.07)";
-                  e.currentTarget.style.boxShadow = "none";
-                }}
-              >
-                <div
-                  style={{
-                    width: 40,
-                    height: 40,
-                    borderRadius: "50%",
-                    background: `${item.c}15`,
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    fontSize: "1rem",
-                    color: item.c,
-                  }}
-                >
-                  {item.icon}
-                </div>
-                <div>
-                  <p
-                    style={{
-                      fontSize: ".6rem",
-                      letterSpacing: ".14em",
-                      textTransform: "uppercase",
-                      color: "#aaa8a0",
-                      marginBottom: 4,
-                    }}
-                  >
-                    {item.label}
-                  </p>
-                  <p style={{ fontSize: ".92rem", color: "#3a3830" }}>
-                    {item.value}
-                  </p>
-                </div>
-              </a>
-            ))}
-
-            {/* 강조 카드 */}
-            <div
-              style={{
-                padding: "22px 24px",
-                background:
-                  "linear-gradient(135deg,rgba(107,154,107,0.08),rgba(176,122,110,0.06))",
-                border: "1px solid rgba(107,154,107,0.2)",
-                borderRadius: 6,
-                marginTop: 4,
-              }}
-            >
-              <p
-                style={{
-                  fontSize: ".7rem",
-                  letterSpacing: ".12em",
-                  textTransform: "uppercase",
-                  color: "#6b9a6b",
-                  marginBottom: 12,
-                }}
-              >
-                핵심 역량 요약
-              </p>
-              <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-                {[
-                  "9년+ 행정 실무",
-                  "자동화 매크로 개발",
-                  "AI Agent · RAG",
-                  "VMD 기획",
-                  "다국어 소통",
-                ].map((tag) => (
-                  <span
-                    key={tag}
-                    style={{
-                      padding: "5px 12px",
-                      background: "#fff",
-                      border: "1px solid rgba(107,154,107,0.3)",
-                      borderRadius: 16,
-                      fontSize: ".68rem",
-                      color: "#6b9a6b",
-                    }}
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div
-          style={{
-            position: "absolute",
-            bottom: 24,
-            left: 0,
-            right: 0,
-            textAlign: "center",
-            fontSize: ".62rem",
-            color: "#c0bdb8",
-          }}
-        >
-          © 2025 Park Sehyung · All rights reserved
-        </div>
-      </Slide>
     </div>
   );
 }
