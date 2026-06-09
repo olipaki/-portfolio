@@ -110,7 +110,7 @@ const SKILLS = [
 
 const PROJECTS = [
   {
-    id: "uDGOEN-_bQ8",
+    img: "/project1.png",
     num: "01",
     tag: "HR SERVICE",
     title: "AI 기반 채용 운영 서비스",
@@ -119,7 +119,7 @@ const PROJECTS = [
     color: "#6b9a6b",
   },
   {
-    id: "E_vB3BvMr2Q",
+    img: "/project2.png",
     num: "02",
     tag: "AI AUTOMATION",
     title: "AI 기반 수출 데이터 자동화 서비스",
@@ -1362,99 +1362,26 @@ export default function Portfolio() {
                     "0 4px 20px rgba(0,0,0,0.06)")
                 }
               >
-                {/* Video */}
+                {/* Image */}
                 <div
                   style={{
                     position: "relative",
                     paddingTop: "52%",
                     background: "#f0ece4",
+                    overflow: "hidden",
                   }}
                 >
-                  {playing === i ? (
-                    <iframe
-                      style={{
-                        position: "absolute",
-                        inset: 0,
-                        width: "100%",
-                        height: "100%",
-                        border: "none",
-                      }}
-                      src={`https://www.youtube.com/embed/${p.id}?autoplay=1`}
-                      allow="autoplay;fullscreen"
-                      allowFullScreen
-                    />
-                  ) : (
-                    <div
-                      onClick={() => setPlaying(i)}
-                      style={{
-                        position: "absolute",
-                        inset: 0,
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        background:
-                          "linear-gradient(135deg,rgba(255,255,255,.85),rgba(240,240,235,.7))",
-                        cursor: "none",
-                      }}
-                    >
-                      <img
-                        src={`https://img.youtube.com/vi/${p.id}/maxresdefault.jpg`}
-                        alt=""
-                        style={{
-                          position: "absolute",
-                          inset: 0,
-                          width: "100%",
-                          height: "100%",
-                          objectFit: "cover",
-                          opacity: 0.4,
-                        }}
-                        onError={(e) => (e.target.style.display = "none")}
-                      />
-                      <div
-                        style={{
-                          position: "relative",
-                          zIndex: 1,
-                          width: 52,
-                          height: 52,
-                          borderRadius: "50%",
-                          background: p.color,
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          boxShadow: `0 4px 20px ${p.color}40`,
-                          transition: "transform .2s",
-                        }}
-                        onMouseEnter={(e) =>
-                          (e.currentTarget.style.transform = "scale(1.1)")
-                        }
-                        onMouseLeave={(e) =>
-                          (e.currentTarget.style.transform = "none")
-                        }
-                      >
-                        <svg
-                          width="16"
-                          height="16"
-                          viewBox="0 0 24 24"
-                          fill="white"
-                          style={{ marginLeft: 3 }}
-                        >
-                          <polygon points="5,3 19,12 5,21" />
-                        </svg>
-                      </div>
-                      <span
-                        style={{
-                          position: "absolute",
-                          bottom: 14,
-                          left: 18,
-                          fontSize: ".62rem",
-                          color: "#888",
-                          letterSpacing: ".1em",
-                        }}
-                      >
-                        클릭하여 재생
-                      </span>
-                    </div>
-                  )}
+                  <img
+                    src={p.img}
+                    alt={p.title}
+                    style={{
+                      position: "absolute",
+                      inset: 0,
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                  />
                 </div>
                 {/* Body */}
                 <div style={{ padding: "22px 24px 26px" }}>
