@@ -1,6 +1,8 @@
 import puppeteer from "puppeteer";
+import { PDFDocument } from "pdf-lib";
 import path from "path";
 import { fileURLToPath } from "url";
+import { readFileSync, writeFileSync } from "fs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUTPUT_DIR = path.join(__dirname, "pdf-output");
@@ -51,20 +53,19 @@ async function run() {
   });
   console.log("PNG 저장 완료");
 
-  // viewport 높이를 전체 높이로 설정 후 PDF 생성
-  await page.setViewport({ width: 1440, height: fullHeight, deviceScaleFactor: 2 });
-  await new Promise((r) => setTimeout(r, 300));
-
-  const pdfPath = path.join(OUTPUT_DIR, "portfolio_full.pdf");
-  await page.pdf({
-    path: pdfPath,
-    width: "1440px",
-    height: `${fullHeight}px`,
-    printBackground: true,
-    pageRanges: "1",
-  });
-
   await browser.close();
+
+  // PNG → PDF 변환 (pdf-lib로 이미지 임베드 방식 → 전체 내용 보장)
+  const pdfPath = path.join(OUTPUT_DIR, "portfolio_full.pdf");
+  const pngBytes = readFileSync(pngPath);
+  const pdfDoc = await PDFDocument.create();
+  const pngImage = await pdfDoc.embedPng(pngBytes);
+  const { width, height } = pngImage.scale(0.5); // 2x 스케일 → 1x로 축소
+  const pdfPage = pdfDoc.addPage([width, height]);
+  pdfPage.drawImage(pngImage, { x: 0, y: 0, width, height });
+  const pdfBytes = await pdfDoc.save();
+  writeFileSync(pdfPath, pdfBytes);
+
   console.log(`\n✅ 완료!`);
   console.log(`  PDF: ${pdfPath}`);
   console.log(`  PNG: ${pngPath}`);

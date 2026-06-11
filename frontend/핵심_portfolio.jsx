@@ -11,13 +11,15 @@ const CAREER = [
     company: "신성통상(주)",
     role: "대리 · 임원비서 / 총무·경영지원",
     tasks: [
-      "경영진 지원 경험을 바탕으로 조직 운영 구조, 보고 체계, 우선순위 조율 역량 축적",
-      "전사 운영 지원, 복리후생, 출장관리, 인사·총무지원 수행",
+      "사내 시스템 접근 권한 기안 작성 및 IT·보안 부서 협업 지원",
+      "오피스 운영 전반 단독 담당 — 시설·미화·보안·좌석 배치 관리 (산업안전 법규 기준 적용 포함)",
+      "본사 리모델링에 따른 임시 오피스 이전 과정 참여",
+      "임대차·설비·협력업체 등 외부 계약 체결·이행·갱신 관리",
+      "자산 구매·재고·폐기 프로세스 운영 및 담당업무 예산 편성 참여",
+      "복리후생 운영·개선, 출장·주재원 지원 등 구성원 운영 전반 관리",
       "본사·수출본부·유관부서 간 운영 조율 및 이슈 대응",
-      "수출본부 오피스 운영 전반 단독 담당",
-      "운영 프로세스 개선 및 업무 효율화 수행",
     ],
-    highlight: "출장 정산 자동화 구축으로 오류 사전 방지 및 검증 효율 향상",
+    highlight: "Google Workspace 기반 출장 정산 자동화 구축 — 오류 방지 및 검증 효율 향상",
     color: "#6b9a6b",
   },
   {
@@ -134,8 +136,8 @@ const SECTIONS = [
   "About",
   "Career",
   "역량",
-  "Projects",
   "Skills",
+  "Projects",
 ];
 
 /* ── CURSOR ── */
@@ -846,7 +848,7 @@ export default function Portfolio() {
                     AI 기반 업무 자동화
                   </strong>
                   와 디지털 워크플로우 개선까지<br />
-                  연결 할 수 있는 역략을 갖추고 있습니다.
+                  연결 할 수 있는 역량을 갖추고 있습니다.
                 </p>
               </div>
 
@@ -1188,8 +1190,8 @@ export default function Portfolio() {
                 bg: "rgba(107,154,107,0.06)",
                 border: "rgba(107,154,107,0.25)",
                 title: "오피스 운영 총괄",
-                desc: "본사와 분리된 수출본부 오피스의 총무 운영 전반을 단독으로 담당하며, 임대차 갱신부터 업무환경 운영, 외부업체 대응까지 실질 운영 책임을 수행했습니다.",
-                keywords: ["오피스 임대차", "업무환경 운영", "시설·주차 관리", "사내 공사·환경 개선", "인테리어·설비", "협력업체·렌탈 계약", "운영 이슈 대응"],
+                desc: "본사와 분리된 수출본부 오피스의 총무 운영 전반을 단독으로 담당하며, 임대차 갱신부터 업무환경 운영, 출장·정산 및 주재원 지원, 외부업체 대응까지 폭넓은 운영 책임을 수행했습니다.",
+                keywords: ["오피스 운영", "출장·정산·보험", "법인차량 관리", "외부업체 대응"],
               },
               {
                 icon: "🔄",
@@ -1198,7 +1200,7 @@ export default function Portfolio() {
                 border: "rgba(176,122,110,0.25)",
                 title: "사내 서비스 이용 흐름 개선",
                 desc: "다수 인원이 이용하는 사내 서비스에서 반복되는 불편 요소를 파악하고, 이용 방식과 관리 흐름을 재설계해 운영 효율과 사용자 편의성을 높였습니다.",
-                keywords: ["사용자 중심", "이용 흐름 재설계", "운영 효율화"],
+                keywords: ["사용자 중심", "온보딩·명함", "이용 흐름 개선", "운영 효율화"],
               },
               {
                 icon: "🛠️",
@@ -1207,7 +1209,7 @@ export default function Portfolio() {
                 border: "rgba(122,143,171,0.25)",
                 title: "Google 기반 업무 자동화",
                 desc: "Google Forms, Sheets, Apps Script를 연동해 사용자 입력이 자동 취합되고, 후속 메일이 자동 발송되도록 실무 프로세스를 구축했습니다.",
-                keywords: ["업무 자동화", "자동 메일 발송", "Google Workspace"],
+                keywords: ["업무 자동화", "자동 메일 발송", "명함 프로세스", "Google Workspace"],
               },
               {
                 icon: "🤖",
@@ -1304,10 +1306,110 @@ export default function Portfolio() {
         </div>
       </Slide>
 
-      {/* ════════ S4 · PROJECTS ════════ */}
-      <Slide id="s4" bg="rgba(240,245,240,0.5)">
+      {/* ════════ S4 · SKILLS ════════ */}
+      <Slide id="s4">
         <div style={{ maxWidth: 1200, width: "100%" }}>
-          <SectionHead num="04" title="AI Projects" />
+          <SectionHead num="05" title="Skills & Certificates" />
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(2,1fr)",
+              gap: 24,
+              marginBottom: 36,
+            }}
+          >
+            {SKILLS.map((s, i) => (
+              <div
+                key={i}
+                onMouseEnter={() => setHovered(`sk${i}`)}
+                onMouseLeave={() => setHovered(null)}
+                style={{
+                  background: "#fff",
+                  borderRadius: 6,
+                  padding: "28px 24px",
+                  border: `1.5px solid ${hovered === `sk${i}` ? s.color + "50" : "rgba(0,0,0,0.07)"}`,
+                  boxShadow:
+                    hovered === `sk${i}`
+                      ? `0 8px 28px ${s.color}18`
+                      : "0 2px 12px rgba(0,0,0,0.04)",
+                  transition: "all .3s",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 10,
+                    marginBottom: 20,
+                  }}
+                >
+                  <div
+                    style={{
+                      width: 32,
+                      height: 3,
+                      background: s.color,
+                      borderRadius: 2,
+                    }}
+                  />
+                  <p
+                    style={{
+                      fontSize: ".62rem",
+                      letterSpacing: ".16em",
+                      textTransform: "uppercase",
+                      color: s.color,
+                    }}
+                  >
+                    {s.cat}
+                  </p>
+                </div>
+                <ul style={{ listStyle: "none" }}>
+                  {s.items.map((it, j) => (
+                    <li
+                      key={j}
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 10,
+                        padding: "9px 0",
+                        borderBottom:
+                          j < s.items.length - 1
+                            ? "1px solid rgba(0,0,0,0.05)"
+                            : "none",
+                        fontSize: ".84rem",
+                        color: "#4a4840",
+                        transition: "color .2s",
+                      }}
+                      onMouseEnter={(e) =>
+                        (e.currentTarget.style.color = s.color)
+                      }
+                      onMouseLeave={(e) =>
+                        (e.currentTarget.style.color = "#4a4840")
+                      }
+                    >
+                      <span
+                        style={{
+                          width: 5,
+                          height: 5,
+                          borderRadius: "50%",
+                          background: s.color,
+                          flexShrink: 0,
+                        }}
+                      />
+                      {it}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+        </div>
+      </Slide>
+
+      {/* ════════ S5 · PROJECTS ════════ */}
+      <Slide id="s5" bg="rgba(240,245,240,0.5)">
+        <div style={{ maxWidth: 1200, width: "100%" }}>
+          <SectionHead num="06" title="AI Projects" />
           {/* Course banner */}
           <div
             style={{
@@ -1439,106 +1541,6 @@ export default function Portfolio() {
               </div>
             ))}
           </div>
-        </div>
-      </Slide>
-
-      {/* ════════ S5 · SKILLS ════════ */}
-      <Slide id="s5">
-        <div style={{ maxWidth: 1200, width: "100%" }}>
-          <SectionHead num="04" title="Skills & Certificates" />
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(2,1fr)",
-              gap: 24,
-              marginBottom: 36,
-            }}
-          >
-            {SKILLS.map((s, i) => (
-              <div
-                key={i}
-                onMouseEnter={() => setHovered(`sk${i}`)}
-                onMouseLeave={() => setHovered(null)}
-                style={{
-                  background: "#fff",
-                  borderRadius: 6,
-                  padding: "28px 24px",
-                  border: `1.5px solid ${hovered === `sk${i}` ? s.color + "50" : "rgba(0,0,0,0.07)"}`,
-                  boxShadow:
-                    hovered === `sk${i}`
-                      ? `0 8px 28px ${s.color}18`
-                      : "0 2px 12px rgba(0,0,0,0.04)",
-                  transition: "all .3s",
-                }}
-              >
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 10,
-                    marginBottom: 20,
-                  }}
-                >
-                  <div
-                    style={{
-                      width: 32,
-                      height: 3,
-                      background: s.color,
-                      borderRadius: 2,
-                    }}
-                  />
-                  <p
-                    style={{
-                      fontSize: ".62rem",
-                      letterSpacing: ".16em",
-                      textTransform: "uppercase",
-                      color: s.color,
-                    }}
-                  >
-                    {s.cat}
-                  </p>
-                </div>
-                <ul style={{ listStyle: "none" }}>
-                  {s.items.map((it, j) => (
-                    <li
-                      key={j}
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        gap: 10,
-                        padding: "9px 0",
-                        borderBottom:
-                          j < s.items.length - 1
-                            ? "1px solid rgba(0,0,0,0.05)"
-                            : "none",
-                        fontSize: ".84rem",
-                        color: "#4a4840",
-                        transition: "color .2s",
-                      }}
-                      onMouseEnter={(e) =>
-                        (e.currentTarget.style.color = s.color)
-                      }
-                      onMouseLeave={(e) =>
-                        (e.currentTarget.style.color = "#4a4840")
-                      }
-                    >
-                      <span
-                        style={{
-                          width: 5,
-                          height: 5,
-                          borderRadius: "50%",
-                          background: s.color,
-                          flexShrink: 0,
-                        }}
-                      />
-                      {it}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-
         </div>
       </Slide>
 
