@@ -19,6 +19,8 @@
   "homepage": "https://github.com/olipaki/-portfolio#readme",
   "dependencies": {
     "pdf-lib": "^1.17.1",
-    "puppeteer": "^25.1.0"
+    "pptxgenjs": "^4.0.1",
+    "puppeteer": "^25.1.0",
+    "simple-icons": "^16.23.0"
   }
 }

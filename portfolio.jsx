@@ -794,7 +794,7 @@ export default function Portfolio() {
                 { label: "성명", value: "박세형" },
                 { label: "생년월일", value: "1990.05.17" },
                 { label: "위치", value: "서울시 강동구" },
-                { label: "연락처", value: "010-3052-9662" },
+                { label: "연락처", value: "010-8036-9958" },
                 { label: "", value: "Se7en3333@naver.com", span: true },
                 {
                   label: "언어",
@@ -1492,7 +1492,7 @@ export default function Portfolio() {
               {
                 icon: "✆",
                 label: "Phone",
-                value: "010-3052-9662",
+                value: "010-8036-9958",
                 href: "tel:01030529662",
               },
               { icon: "⌖", label: "Location", value: "서울시 강동구" },

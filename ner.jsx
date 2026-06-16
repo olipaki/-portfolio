@@ -801,7 +801,7 @@ export default function Portfolio() {
                 { label: "성명", value: "박세형" },
                 { label: "생년월일", value: "1990.05.17" },
                 { label: "위치", value: "서울시 강동구" },
-                { label: "연락처", value: "010-3052-9662" },
+                { label: "연락처", value: "010-8036-9958" },
                 { label: "이메일", value: "se7en3333@naver.com", span: true },
                 {
                   label: "언어",
@@ -975,7 +975,7 @@ export default function Portfolio() {
       ════════════════════════════════════ */}
       <Slide id="section-3">
         <div style={{ maxWidth: 1200, width: "100%" }}>
-          <SectionLabel num="03" title="AI Projects" />
+          <SectionLabel num="03" title="cts" />
           <div
             style={{
               padding: "20px 28px",
@@ -1616,7 +1616,7 @@ export default function Portfolio() {
               {
                 icon: "✆",
                 label: "Phone",
-                value: "010-3052-9662",
+                value: "010-8036-9958",
                 href: "tel:01030529662",
               },
               { icon: "⌖", label: "Location", value: "서울시 강동구" },
