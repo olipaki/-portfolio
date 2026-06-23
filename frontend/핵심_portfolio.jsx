@@ -14,76 +14,60 @@ const CAREER = [
     groups: [
       {
         emoji: "",
-        label: "임원 비서",
+        label: "임원비서",
         period: "2016.07 — 2022.02",
         items: [
-          { task: "CEO·회장·부회장·사장단 다수 경영진 동시 지원 체계 장기 안정적 운영" },
-          { task: "해외 바이어·컨퍼런스 및 VIP 방문 의전·회의 준비" },
-          { task: "경영진 보고 체계·우선순위 조율 및 유관부서 간 운영 커뮤니케이션 조율" },
-          { task: "비품·소모품·자산 관리, 법인카드 경비처리·세금계산서 관리·품의서 작성 등 총무 실무 병행" },
-          { task: "워크샵·사내 행사 지원 및 직원 소통 기반 업무환경 개선 참여", highlight: "비서 업무와 총무 실무 병행으로 경영지원 전반 역량 선행 축적" },
+          { task: "CEO·회장·부회장·사장단 2~3인 동시 지원 체계 6년간 운영, 보고 우선순위 조율 및 유관부서 커뮤니케이션,<br />해외 바이어·VIP 방문 의전 대응", highlight: "해외출장·자산·법인카드 경비·세금계산서 등 총무 실무 병행 수행으로 경영지원 역량 선행 축적, 이후 총무·경영지원 전환의 기반 마련" },
         ],
       },
       {
         emoji: "",
-        label: "오피스 운영",
+        label: "Workplace 운영 (분리된 오피스)",
         items: [
-          { task: "오피스 운영 전반 단독 담당 — 시설·미화·보안·좌석 배치 관리 (산업안전 법규 기준 적용)" },
-          { task: "시설물 운영 — 조명·공조·전기·통신 하자 점검·조치, 소방·방역 등 법정 점검 대응" },
-          { task: "주차 시스템 전산화 전환 시 운영 방식 개선 — 구성원 요청 없이 즉시 사용 가능한 환경 구축", highlight: "수동 요청 방식 제거로 구성원 편의성 향상, 월 1회 정산 처리 구조로 효율화" },
-          { task: "본사 리모델링에 따른 임시 오피스 이전 셋팅·운영 참여", highlight: "수출본부 오피스 독립 운영 체계 구축, 이전 기간 업무 공백 없이 지원" },
+          { task: "약 100~150명 규모 수출본부 오피스 시설·보안·미화·좌석배치 단독 운영(산업안전 법규 적용)", highlight: "리모델링·이전 시 업무 공백 Zero, 본사-수출본부 등 분리 조직 간 운영 이슈 조율" },
+          { highlight: "주차 시스템 전산화(신청 대기시간 Zero화), 공용 우산 회수율 50%→90% QR코드 기반 시스템 기획·개선으로 운영 효율화" },
         ],
       },
       {
         emoji: "",
-        label: "출장·주재원 지원",
+        label: "복리후생 운영",
         items: [
-          { task: "출장·주재원 지원 — 항공권·비자·여행자보험·ABTC·마일리지·해외이사 비딩까지 전 과정 단독 관리" },
-          { task: "중국·베트남·인도네시아·방글라데시·미얀마·미국 등 6개국 대사관 서류 직접 작성·보완, 다수 승인 완료" },
-          { task: "여행사·법무 대행사와 직접 소통해 국가별 비자 요건 파악 및 전 과정 조율" },
-          { highlight: "방글라데시 긴급 출장 비자 지연 → 도착비자 즉시 전환, 일정 내 입국 완료" },
-          { highlight: "미국 ESTA 탑승 직전 지연 → 매일 크로스체크·보완으로 탑승 전 승인 완료" },
-          { highlight: "중국 법인 대표자 교체·장기거주비자 전환 → 공증 서류 다량 처리, 기간 내 완료" },
+          { task: "800여명 대상 생일상품권·법인콘도·위탁보육료·명절행사 등 복지 전반 운영", highlight: "법인콘도 신청방식 개선(이미지+바코드)으로 참여 인원 100명→130명, 약 30% 증가<br />(텍스트 위주 공고로 인한 낮은 이용률 문제 인식 → 달력형 시각 이미지+QR코드 도입)" },
         ],
       },
       {
         emoji: "",
-        label: "계약·자산 관리",
+        label: "사내 행사 운영",
         items: [
-          { task: "임대차·시설·협력업체 등 외부 계약 체결·이행·갱신 관리", highlight: "다수 업체 비딩·비교 검토로 비용 절감 및 최적 조건 계약 체결" },
-          { task: "수출본부 담당 자산 현황 파악·실사 및 총무팀 취합 프로세스 참여", highlight: "계약 갱신 누락 없이 지속 관리, 수출본부 담당 자산 누락 없이 보고" },
+          { task: "본부별 워크숍 운영(장소·메뉴 섭외)", highlight: "본부별 의견사항 반영해 워크숍 구성 차별화 → 본부 특성에 맞는 맞춤형 운영으로 참여 만족도 제고" },
         ],
       },
       {
         emoji: "",
-        label: "보안·차량·통신",
+        label: "온보딩 및<br />구성원 적응 지원",
         items: [
-          { task: "보안·차량·통신 관리 — 세콤 운영, 법인차량 정비·과태료 처리, 통신요금 정산 및 내선 관리", highlight: "월간 점검 루틴 및 수시 대응 병행으로 운영 공백 없이 유지" },
+          { task: "본사와 분리된 수출본부 한정으로, 인사팀 관할 업무를 단독 수행<br />(보안 지문등록, 사원증 발급, 기안 상신, 휴가 사용 등 신규 입사자 교육)", highlight: "입사자 소통으로 적응 어려움 파악, 안내 자료·방식 개선에 반영" },
         ],
       },
       {
         emoji: "",
-        label: "복리후생·행사",
+        label: "외부업체·계약",
         items: [
-          { task: "복리후생 운영 — 생일상품권·법인콘도·위탁보육·명절행사·간식 등 구성원 복지 전반 운영" },
-          { task: "법인콘도 이벤트 참여 방식 개선 — 바코드 신청 방식으로 전환", highlight: "법인콘도 바코드 신청 방식 전환으로 참여 접근성 개선 및 참여율 향상" },
-          { task: "사내 행사 운영 — 명절·복날·한우데이·연말 다이어리 등 시즌별 행사 기획 참여·실행", highlight: "구성원 수요 반영한 복지 항목 운영 및 연간 고정 행사 선제적 준비 수행" },
+          { task: "임대차·시설·협력업체 계약 체결 및 비딩 비교, 보안(세콤)·법인차량·통신 정산 관리", highlight: "다수 업체 비교로 비용 최적화, 계약 갱신 누락 Zero 유지" },
         ],
       },
       {
         emoji: "",
-        label: "시스템·조직 지원",
+        label: "출장·비자",
         items: [
-          { task: "부서별 시스템 접근 권한 요청 취합·기안 작성 및 IT 부서 연계 처리 지원" },
-          { task: "본사·수출본부·유관부서 간 운영 조율 및 이슈 대응", highlight: "물리적으로 분리된 조직 간 운영 이슈 단독 조율, 업무 연속성 유지" },
+          { task: "법인 소재 6개국(중국·베트남·인도네시아·방글라데시·미얀마·미국) 비자·법인서류·해외이사 업무 및 다수 국가 출장 지원,<br />연 평균 480건(월 40건) 단독 관리", highlight: "법인 대표자 교체·비자 전환, 심사 절차가 까다로운 ABTC 발급 등 고난도 행정 단독 완결,<br />해외이사 비딩으로 평균 3~5% 비용 절감" },
         ],
       },
       {
         emoji: "",
-        label: "업무 자동화",
+        label: "자동화 (Digital Transformation)",
         items: [
-          { task: "Google Workspace 기반 명함 신청 자동화 구축 — Forms 신청 접수 → Sheets 자동 취합 → Apps Script로 디자이너<br />자동 메일 발송 → PDF 업로드 시 신청자 자동 알림까지 전 과정 직접 구축", highlight: "중간 전달 과정 제거로 처리 속도 향상, 신청자·디자이너 간 다이렉트 소통 구조 실현" },
-          { task: "Excel VBA 기반 출장 정산 자동화 구축", highlight: "수동 검토 오류 제거 및 정산 검증 효율 향상" },
+          { task: "Google Forms·Sheets·Apps Script·Drive 연동 명함 신청 자동화, Excel VBA 기반 출장정산 자동화 구축", highlight: "다단계 전달 구조 제거로 정상 처리 건 담당자 개입률 0%,<br />정산 검토 오류 제거로 처리 효율 향상" },
         ],
       },
     ],
@@ -200,6 +184,14 @@ const SECTIONS = [
   "Skills",
   "Projects",
 ];
+
+function darken(hex, amt) {
+  const num = parseInt(hex.slice(1), 16);
+  const r = Math.max(0, (num >> 16) - amt);
+  const g = Math.max(0, ((num >> 8) & 0xff) - amt);
+  const b = Math.max(0, (num & 0xff) - amt);
+  return `#${((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)}`;
+}
 
 /* ── CURSOR ── */
 function Cursor({ mouse }) {
@@ -588,7 +580,7 @@ export default function Portfolio() {
             {/* 이름·직함 */}
             <div style={{ textAlign: "center" }}>
               <h1 style={{ fontFamily: "'Noto Serif KR',serif", fontSize: "1.6rem", fontWeight: 700, color: "#2c2820", margin: "0 0 6px" }}>박세형</h1>
-              <p style={{ fontSize: ".72rem", color: "#7a6e62", letterSpacing: ".04em", lineHeight: 1.6 }}>총무·경영지원 · 오피스 운영</p>
+              <p style={{ fontSize: ".72rem", color: "#7a6e62", letterSpacing: ".04em", lineHeight: 1.6 }}></p>
             </div>
 
             {/* 연락처 */}
@@ -661,7 +653,7 @@ export default function Portfolio() {
                   company: "신성통상(주)",
                   role: "대리 · 임원비서 / 인사·총무·경영지원",
                   period: "2016.07 — 2025.12",
-                  desc: "6개국 비자·주재원 출장 단독 관리 / 전사운영지원 / 오피스 운영 / 업무 자동화",
+                  desc: "전사 복리후생 운영 / 6개국 비자·글로벌 모빌리티 / 오피스 운영 / 업무 자동화",
                 },
                 {
                   company: "포에버21코리아리테일(유)",
@@ -1225,7 +1217,7 @@ export default function Portfolio() {
                     letterSpacing: ".1em",
                   }}
                 >
-                  총무·경영지원 · 오피스 운영
+                 
                 </p>
               </div>
             </div>
@@ -1235,7 +1227,7 @@ export default function Portfolio() {
 
       {/* ════════ S4 · CAREER ════════ */}
       <Slide id="s4">
-        <div style={{ maxWidth: 1200, width: "100%" }}>
+        <div style={{ maxWidth: 1200, width: "100%", textAlign: "left" }}>
           <SectionHead
             num="01"
             title="Career"
@@ -1358,7 +1350,11 @@ export default function Portfolio() {
                             >
                               <span style={{ fontSize: ".85rem", lineHeight: 1 }}>{g.emoji}</span>
                               <div>
-                                <span style={{ fontSize: ".72rem", fontWeight: 700, color: c.color, lineHeight: 1.4, letterSpacing: ".02em" }}>{g.label}</span>
+                                <span style={{ fontSize: ".72rem", fontWeight: 700, color: c.color, lineHeight: 1.4, letterSpacing: ".02em" }}>
+                                  {g.label.split("<br />").map((part, pi, parts) => (
+                                    <span key={pi}>{part}{pi < parts.length - 1 && <br />}</span>
+                                  ))}
+                                </span>
                                 {g.period && (
                                   <p style={{ fontSize: ".58rem", color: "#aaa8a0", marginTop: 3, letterSpacing: ".01em" }}>{g.period}</p>
                                 )}
@@ -1380,8 +1376,8 @@ export default function Portfolio() {
                                 <div key={ti} style={{ display: "flex", flexDirection: "column", gap: 4, marginTop: ti > 0 ? 4 : 0 }}>
                                   {it.task && (
                                     <div style={{ display: "flex", alignItems: "flex-start", gap: 8 }}>
-                                      <span style={{ color: c.color, fontSize: ".5rem", marginTop: 5, flexShrink: 0, opacity: 0.7 }}>◆</span>
-                                      <span style={{ fontSize: ".8rem", color: "#4a4840", lineHeight: 1.7 }}>
+                                      <span style={{ color: "#000", fontSize: ".5rem", marginTop: 5, flexShrink: 0 }}>◆</span>
+                                      <span style={{ fontSize: ".8rem", color: "#000", lineHeight: 1.7 }}>
                                         {it.task.split("<br />").map((part, pi, parts) => (
                                           <span key={pi}>{part}{pi < parts.length - 1 && <br />}</span>
                                         ))}
@@ -1389,9 +1385,13 @@ export default function Portfolio() {
                                     </div>
                                   )}
                                   {it.highlight && (
-                                    <div style={{ display: "flex", alignItems: "flex-start", gap: 8, paddingLeft: it.task ? 16 : 0 }}>
-                                      <span style={{ color: c.color, fontSize: ".72rem", flexShrink: 0, lineHeight: 1.5 }}>✦</span>
-                                      <span style={{ fontSize: ".74rem", color: c.color, fontWeight: 600, lineHeight: 1.6, opacity: 0.85 }}>{it.highlight}</span>
+                                    <div style={{ display: "flex", alignItems: "flex-start", gap: 8 }}>
+                                      <span style={{ color: darken(c.color, 40), fontSize: ".72rem", flexShrink: 0, lineHeight: 1.5 }}>✦</span>
+                                      <span style={{ fontSize: ".74rem", color: darken(c.color, 40), fontWeight: 700, lineHeight: 1.6 }}>
+                                        {it.highlight.split("<br />").map((part, pi, parts) => (
+                                          <span key={pi}>{part}{pi < parts.length - 1 && <br />}</span>
+                                        ))}
+                                      </span>
                                     </div>
                                   )}
                                 </div>
