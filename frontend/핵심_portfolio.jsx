@@ -168,7 +168,7 @@ const PROJECTS = [
     num: "02",
     tag: "AI AUTOMATION",
     title: "AI 기반 수출 데이터 자동화 서비스",
-    desc: "실제 현업 데이터를 분석해 주간 리포트 자동 생성 및 자동 메일 발송까지 구현·배포한 현업 활용 서비스",
+    desc: "주간 리포트 자동 생성·자동 메일 발송 기능을 구현해 현업에서 실제 사용중. 데모 링크: 화면 UI만 재현한 프론트엔드 목업 (기능 미작동, 실제 서비스는 보안상 비공개)",
     techs: ["데이터 자동 분석", "주간 리포트 자동화", "자동 메일 발송", "현업 배포", "QA팀 활용중"],
     color: "#b07a6e",
   },
@@ -647,7 +647,7 @@ export default function Portfolio() {
 
             {/* 경력 */}
             <div>
-              <p style={{ fontSize: ".6rem", letterSpacing: ".15em", textTransform: "uppercase", color: "#6b9a6b", marginBottom: 14, paddingBottom: 6, borderBottom: "1px solid rgba(107,154,107,0.3)" }}>경력 <span style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: ".85rem", fontStyle: "italic", color: "#aaa8a0", marginLeft: 6 }}>총 경력 12년 5개월</span></p>
+              <p style={{ fontSize: ".6rem", letterSpacing: ".15em", textTransform: "uppercase", color: "#6b9a6b", marginBottom: 14, paddingBottom: 6, borderBottom: "1px solid rgba(107,154,107,0.3)" }}>경력 총 12년 5개월</p>
               {[
                 {
                   company: "신성통상(주)",
