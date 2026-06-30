@@ -192,7 +192,7 @@ function addLabelDescList(slide, items, x, y, w, color, opts = {}) {
   s.addText("PHOTO", { x: 1.6, y: 0.5, w: 0.8, h: 0.8, fontFace: FONT, fontSize: 7, color: GREY, align: "center", valign: "middle" });
 
   s.addText("박세형", { x: 0.3, y: 1.45, w: 3.4, h: 0.4, fontFace: "Noto Serif KR", fontSize: 20, bold: true, color: DARK, align: "center", valign: "top" });
-  s.addText("총무·경영지원 · 오피스 운영", { x: 0.3, y: 1.85, w: 3.4, h: 0.3, fontFace: FONT, fontSize: 10, color: "7A6E62", align: "center", valign: "top" });
+  s.addText( { x: 0.3, y: 1.85, w: 3.4, h: 0.3, fontFace: FONT, fontSize: 10, color: "7A6E62", align: "center", valign: "top" });
 
   s.addText(
     [
@@ -257,7 +257,7 @@ function addLabelDescList(slide, items, x, y, w, color, opts = {}) {
 
   let jy = 0.88;
   [
-    { company: "신성통상(주)", role: "대리 · 임원비서 / 인사·총무·경영지원", period: "2016.07 — 2025.12", desc: "전사 운영 지원 / 출장·해외주재원·복리후생 / 수출본부 오피스 운영 / 업무 효율화" },
+    { company: "신성통상(주)", role: "대리 · 임원비서 / 인사·총무·경영지원", period: "2016.07 — 2025.12", desc: "6개국 비자·주재원 출장 단독 관리 / 전사운영지원 / 오피스 운영 / 업무 자동" },
     { company: "포에버21코리아리테일(유)", role: "ACC VMD", period: "2010.03 — 2011.11 / 2012.08 — 2013.09", desc: "판매 분석·재고 관리 / 오픈·리뉴얼 셋업" },
     { company: "AI Agent · RAG 프로젝트 수행", role: "", period: "2025.12 — 2026.05", desc: "AI 기반 채용 서비스 / 수출 데이터 자동화 서비스 기획·구현·배포" },
   ].forEach((job, ji) => {
@@ -354,7 +354,7 @@ function addLabelDescList(slide, items, x, y, w, color, opts = {}) {
   [
     { label: "오피스 운영", tasks: ["수출본부 오피스 전반 단독 담당 — 시설·미화·보안·좌석 배치 (산업안전 법규 기준 적용)", "소방·방역 등 법정 점검 대응 및 시설 하자 수시 처리", "본사 리모델링에 따른 임시 오피스 이전 셋팅·운영 참여, 업무 공백 없이 전 과정 지원"] },
     { label: "계약·자산 관리", tasks: ["임대차·시설·협력업체 등 외부 계약 체결·이행·갱신 관리", "협력업체 비딩·비교 검토를 통한 비용 네고 및 최적 조건 계약 체결", "수출본부 담당 자산 현황 파악·실사 및 총무팀 취합 프로세스 참여"] },
-    { label: "구성원 지원", tasks: ["복리후생 운영 — 생일상품권·법인콘도·위탁보육·명절행사 등 전반 운영", "출장·주재원 지원 — 항공권·비자·여행자보험·ABTC·해외이사 비딩까지 전 과정 단독 처리", "시즌별 사내 행사 기획 참여 및 실행"] },
+    { label: "구성원 지원", tasks: ["복리후생 운영 — 생일상품권·법인콘도·위탁보육·명절행사 등 전반 운영", "출장·주재원 지원 — 항공권·비자·여행자보험·ABTC·마일리지·해외이사 비딩까지 전 과정 단독 관리", "시즌별 사내 행사 기획 참여 및 실행"] },
     { label: "업무 자동화", tasks: ["Google Workspace 기반 명함 신청·출장 정산 자동화 구축 — 수동 처리 오류 제거 및 검증 효율 향상"] },
   ].forEach((group) => {
     s.addText(group.label, { x: leftX, y: ly, w: leftW, h: 0.2, fontFace: FONT, fontSize: 8.5, bold: true, color: GREEN, align: "left", valign: "top" });
@@ -371,7 +371,7 @@ function addLabelDescList(slide, items, x, y, w, color, opts = {}) {
     ],
     { x: rightX, y: 0.95, w: rightW, h: 0.4, align: "left", valign: "top" }
   );
-  s.addText("2010.03 — 2013.09 · 총 3년 1개월", { x: rightX, y: 1.22, w: rightW, h: 0.2, fontFace: FONT, fontSize: 7.5, color: GREY, align: "left", valign: "top" });
+  s.addText("2010.03 — 2013.09 · 총 2년 11개월", { x: rightX, y: 1.22, w: rightW, h: 0.2, fontFace: FONT, fontSize: 7.5, color: GREY, align: "left", valign: "top" });
 
   let ry = 1.55;
   [
@@ -559,7 +559,7 @@ function addLabelDescList(slide, items, x, y, w, color, opts = {}) {
   s.addText(
     [
       { text: "박 세 형\n", options: { fontSize: 13, color: "FFFFFF", fontFace: SERIF } },
-      { text: "총무·경영지원 · 오피스 운영", options: { fontSize: 8, color: "E8E6E0" } },
+      { text: "", options: { fontSize: 8, color: "E8E6E0" } },
     ],
     { x: 9.6, y: 4.55, w: 2.6, h: 0.45, fill: { color: "2C3028", transparency: 30 }, align: "left", valign: "top" }
   );
@@ -636,7 +636,7 @@ function addLabelDescList(slide, items, x, y, w, color, opts = {}) {
   s3.background = { color: "FFFFFF" };
   sectionHeader(s3, "Career — 포에버21코리아리테일(유) / 방송·공연 활동 (3/3)", ROSE);
 
-  let topY3 = addCompanyBar(s3, "포에버21코리아리테일(유)", "ACC VMD", ["2010.03 — 2011.11", "2012.08 — 2013.09"], "총 3년 1개월", ROSE, 1.0);
+  let topY3 = addCompanyBar(s3, "포에버21코리아리테일(유)", "ACC VMD", ["2010.03 — 2011.11", "2012.08 — 2013.09"], "총 2년 11개월", ROSE, 1.0);
   topY3 = addCategoryCell(s3, "VMD 운영", null, [
     { task: "매장 오픈·리뉴얼 셋팅 및 현장 운영" },
     { task: "발주·재고 관리 및 판매 분석·리포트 작성", highlight: "신사점 오픈, 명동점 리뉴얼 오픈 셋팅 참여 — 일 매출 1억 5천만 원 달성" },

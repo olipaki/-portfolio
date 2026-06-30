@@ -955,7 +955,7 @@ export default function Portfolio() {
           <SectionHead
             num="02"
             title="Career"
-            sub={`총 경력 12년 5개월 · 행정/총무 9년 6개월 + VMD 3년 1개월`}
+            sub={`총 경력 12년 5개월 · 행정/총무 9년 6개월 + VMD 2년 11개월`}
           />
 
           <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
@@ -1638,7 +1638,7 @@ export default function Portfolio() {
               {
                 icon: "✆",
                 label: "Phone",
-                value: "010-3052-9662",
+                value: "010-8036-9958",
                 href: "tel:01030529662",
                 c: "#b07a6e",
               },
