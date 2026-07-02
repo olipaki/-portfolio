@@ -30,6 +30,20 @@ const CAREER = [
       },
       {
         emoji: "",
+        label: "출장·비자",
+        items: [
+          { task: "법인 소재 6개국(중국·베트남·인도네시아·방글라데시·미얀마·미국) 비자·법인서류·해외이사 업무 및 다수 국가 출장 지원,<br />연 평균 480건(월 40건) 단독 관리", highlight: "법인 대표자 교체·비자 전환, 심사 절차가 까다로운 ABTC 발급 등 고난도 행정 단독 완결,<br />해외이사 비딩으로 평균 3~5% 비용 절감" },
+        ],
+      },
+      {
+        emoji: "",
+        label: "자동화 (Digital Transformation)",
+        items: [
+          { task: "Google Forms·Sheets·Apps Script·Drive 연동 명함 신청 자동화, Excel VBA 기반 출장정산 자동화 구축", highlight: "다단계 전달 구조 제거로 정상 처리 건 담당자 개입률 0%,<br />정산 검토 오류 제거로 처리 효율 향상" },
+        ],
+      },
+      {
+        emoji: "",
         label: "복리후생 운영",
         items: [
           { task: "800여명 대상 생일상품권·법인콘도·위탁보육료·명절행사 등 복지 전반 운영", highlight: "법인콘도 신청방식 개선(이미지+바코드)으로 참여 인원 100명→130명, 약 30% 증가<br />(텍스트 위주 공고로 인한 낮은 이용률 문제 인식 → 달력형 시각 이미지+QR코드 도입)" },
@@ -54,20 +68,6 @@ const CAREER = [
         label: "외부업체·계약",
         items: [
           { task: "임대차·시설·협력업체 계약 체결 및 비딩 비교, 보안(세콤)·법인차량·통신 정산 관리", highlight: "다수 업체 비교로 비용 최적화, 계약 갱신 누락 Zero 유지" },
-        ],
-      },
-      {
-        emoji: "",
-        label: "출장·비자",
-        items: [
-          { task: "법인 소재 6개국(중국·베트남·인도네시아·방글라데시·미얀마·미국) 비자·법인서류·해외이사 업무 및 다수 국가 출장 지원,<br />연 평균 480건(월 40건) 단독 관리", highlight: "법인 대표자 교체·비자 전환, 심사 절차가 까다로운 ABTC 발급 등 고난도 행정 단독 완결,<br />해외이사 비딩으로 평균 3~5% 비용 절감" },
-        ],
-      },
-      {
-        emoji: "",
-        label: "자동화 (Digital Transformation)",
-        items: [
-          { task: "Google Forms·Sheets·Apps Script·Drive 연동 명함 신청 자동화, Excel VBA 기반 출장정산 자동화 구축", highlight: "다단계 전달 구조 제거로 정상 처리 건 담당자 개입률 0%,<br />정산 검토 오류 제거로 처리 효율 향상" },
         ],
       },
     ],
@@ -116,10 +116,10 @@ const EEI_CASES = [
     num: "4→0",
     unit: "단계",
     label: "담당자 경유 단계 축소<br />정상 처리 건은 자동 완결",
-    detail: "도구: Google Forms · Sheets · Apps Script로 신청·알림·자료 제출 과정 자동화",
+    detail: "도구: Google Forms · Sheets + Apps Script 코딩으로 신청 접수·자동 메일 발송·자료 제출 전 과정 자동화 구현",
   },
   {
-    period: "2022",
+    // period: "2022",
     name: "공용 우산 QR 대여 관리",
     desc: "수기 대여 기록의 반납 누락·책임소재 불분명 문제를 QR 기반 기록 시스템으로 해결",
     num: "50→90",
@@ -128,16 +128,16 @@ const EEI_CASES = [
     detail: "도구: QR Code · Google Sheets 연동 자동 집계",
   },
   {
-    period: "2022",
+    // period: "2022",
     name: "주차권 발급 전산화",
     desc: "담당자 수기 응대 방식을 전자 발급 처리 구조로 전환해 대기시간 비효율성 이슈 해소",
     num: "Zero",
     unit: "대기",
     label: "신청 대기시간<br />담당자는 월 1회 점검 중심",
-    detail: "도구: 전자 발급 환경 · 재고·점검 관리 체계화",
+    detail: "도구: 발급 환경 개선 · 재고·점검 관리 체계화",
   },
   {
-    period: "2023",
+    // period: "2023",
     name: "법인콘도 안내 시각화",
     desc: "텍스트 중심 공지를 시각 자료로 재구성해 신규 구성원의 신청 참여를 높임",
     num: "+30",
@@ -160,10 +160,10 @@ const EEI_COMMUNITY = {
     },
     {
       tag: "위기 2 · 리더십 공백",
-      num: "임시 회장",
-      unit: "으로 존속",
+      num: "후임 회장",
+      unit: "연결로 존속",
       long: true,
-      desc: "리더십 공백 발굴·역임으로<br />조직 운영 공백 해소",
+      desc: "퇴임 회장 공석에 후임 임원 발굴·연결해<br />동호회 해체 위기 해소",
     },
   ],
   detail: "활동: 9년간 총무·회계 담당 · 신규 회원 모집 콘텐츠 기획 · 향후 방향 결정 전 회원 참여 구조 설계",
@@ -192,7 +192,7 @@ const PROJECTS = [
 
 const SECTIONS = [
   "Resume",
-  "Employee Experience",
+  "Operations Impact",
   "Career",
   "AI Projects",
 ];
@@ -749,13 +749,13 @@ export default function Portfolio() {
         </div>
       </Slide>
 
-      {/* ════════ S1 · EMPLOYEE EXPERIENCE IMPROVEMENT ════════ */}
+      {/* ════════ S1 · OPERATIONS IMPACT ════════ */}
       <Slide id="s1" bg="#fff">
         <div style={{ maxWidth: 1200, width: "100%", textAlign: "left" }}>
           <SectionHead
             num="01"
-            title="Employee Experience"
-            sub="현장에서 발견한 비효율을 문제 정의 → 개선 설계 → 성과 흐름으로 정리한 구성원 경험 개선 사례입니다."
+            title="Operations Impact"
+            sub="현장에서 발견한 비효율을 문제 정의 → 개선 설계 → 성과 흐름으로 정리한 정량 성과 사례입니다."
           />
 
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20, marginBottom: 36 }}>
@@ -764,61 +764,81 @@ export default function Portfolio() {
                 key={i}
                 style={{
                   background: "#fff",
-                  border: "1px solid rgba(0,0,0,0.07)",
+                  border: "1px solid rgba(0,0,0,0.09)",
+                  borderLeft: "3px solid #6b9a6b",
                   borderRadius: 6,
-                  padding: "24px 26px",
-                  boxShadow: "0 2px 12px rgba(0,0,0,0.04)",
+                  padding: "22px 24px",
+                  boxShadow: "0 2px 14px rgba(0,0,0,0.06)",
                 }}
               >
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 4 }}>
-                  <h3 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: "1.15rem", fontWeight: 400, color: "#2c3028" }}>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 6 }}>
+                  <h3 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: "1.18rem", fontWeight: 600, color: "#2c2820" }}>
                     {c.name}
                   </h3>
-                  <span style={{ fontSize: ".68rem", color: "#aaa8a0", flexShrink: 0, marginLeft: 12 }}>{c.period}</span>
+                  <span style={{ fontSize: ".68rem", color: "#8a8a80", fontWeight: 500, flexShrink: 0, marginLeft: 12 }}>{c.period}</span>
                 </div>
-                <p style={{ fontSize: ".74rem", color: "#7a7870", lineHeight: 1.6, margin: "8px 0 16px" }}>{c.desc}</p>
-                <div style={{ display: "flex", alignItems: "center", gap: 16, background: "#e8efe9", borderRadius: 6, padding: "14px 18px", marginBottom: 14 }}>
-                  <div style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: "1.7rem", fontWeight: 700, color: "#3d5a4c", whiteSpace: "nowrap" }}>
-                    {c.num}
-                    <span style={{ fontSize: ".82rem", fontWeight: 600, marginLeft: 4 }}>{c.unit}</span>
+                <p style={{ fontSize: ".76rem", color: "#4a4840", lineHeight: 1.65, margin: "6px 0 16px" }}>{c.desc}</p>
+                <div style={{ display: "flex", alignItems: "center", gap: 16, background: "#ddeee0", borderRadius: 6, padding: "14px 18px", marginBottom: 14 }}>
+                  <div style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap" }}>
+                    {c.num.includes("→") ? (
+                      <>
+                        <span style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: "1.9rem", fontWeight: 700, color: "#2d4a3a" }}>
+                          {c.num.split("→")[0]}
+                        </span>
+                        <span style={{ fontFamily: "'Noto Sans KR',sans-serif", fontSize: "1rem", fontWeight: 700, color: "#2d4a3a", padding: "0 3px", lineHeight: 1, alignSelf: "center" }}>
+                          →
+                        </span>
+                        <span style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: "1.9rem", fontWeight: 700, color: "#2d4a3a" }}>
+                          {c.num.split("→")[1]}
+                        </span>
+                      </>
+                    ) : (
+                      <span style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: "1.9rem", fontWeight: 700, color: "#2d4a3a" }}>
+                        {c.num}
+                      </span>
+                    )}
+                    <span style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: ".85rem", fontWeight: 700, color: "#2d4a3a", marginLeft: 4 }}>{c.unit}</span>
                   </div>
-                  <div style={{ fontSize: ".68rem", color: "#3f5c4d", lineHeight: 1.5, borderLeft: "1px solid #c7d8cd", paddingLeft: 14 }}>
+                  <div style={{ fontSize: ".72rem", fontWeight: 600, color: "#2d4a3a", lineHeight: 1.55, borderLeft: "1.5px solid #9fc9a8", paddingLeft: 14 }}>
                     {c.label.split("<br />").map((part, pi, parts) => (
                       <span key={pi}>{part}{pi < parts.length - 1 && <br />}</span>
                     ))}
                   </div>
                 </div>
-                <p style={{ fontSize: ".68rem", color: "#7a7a72", lineHeight: 1.6 }}>{c.detail}</p>
+                <p style={{ fontSize: ".71rem", color: "#5a5248", lineHeight: 1.65 }}>
+                  <b style={{ color: "#3a3428", fontWeight: 700 }}>{c.detail.split(": ")[0]}:</b>{" "}
+                  {c.detail.split(": ").slice(1).join(": ")}
+                </p>
               </div>
             ))}
           </div>
 
-          <div style={{ display: "flex", alignItems: "center", gap: 16, margin: "8px 0 24px" }}>
-            <span style={{ flex: 1, borderTop: "1px solid rgba(0,0,0,0.1)" }} />
-            <span style={{ fontSize: ".64rem", color: "#9a9a90", letterSpacing: ".1em" }}>COMMUNITY LEADERSHIP</span>
-            <span style={{ flex: 1, borderTop: "1px solid rgba(0,0,0,0.1)" }} />
+          <div style={{ display: "flex", alignItems: "center", gap: 16, margin: "4px 0 22px" }}>
+            <span style={{ flex: 1, borderTop: "1px solid rgba(0,0,0,0.12)" }} />
+            <span style={{ fontSize: ".68rem", fontWeight: 700, color: "#6b5436", letterSpacing: ".12em" }}>COMMUNITY LEADERSHIP</span>
+            <span style={{ flex: 1, borderTop: "1px solid rgba(0,0,0,0.12)" }} />
           </div>
 
-          <div style={{ background: "#fff", border: "1px solid #d9cfc2", borderRadius: 6, padding: "24px 26px" }}>
+          <div style={{ background: "#fff", border: "1px solid #c8bfb4", borderLeft: "3px solid #a3854f", borderRadius: 6, padding: "22px 24px" }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 6, gap: 16 }}>
-              <h3 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: "1.15rem", fontWeight: 400, color: "#2c3028" }}>
+              <h3 style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: "1.18rem", fontWeight: 600, color: "#2c2820" }}>
                 {EEI_COMMUNITY.name}
               </h3>
-              <span style={{ fontSize: ".64rem", color: "#8a6a3d", background: "#f3ece0", padding: "4px 12px", borderRadius: 20, flexShrink: 0 }}>
+              <span style={{ fontSize: ".66rem", fontWeight: 700, color: "#7a5a2d", background: "#ede5d6", padding: "4px 12px", borderRadius: 20, flexShrink: 0 }}>
                 {EEI_COMMUNITY.tag}
               </span>
             </div>
-            <p style={{ fontSize: ".74rem", color: "#7a7870", lineHeight: 1.6, margin: "8px 0 18px" }}>{EEI_COMMUNITY.desc}</p>
+            <p style={{ fontSize: ".76rem", color: "#4a4840", lineHeight: 1.65, margin: "6px 0 18px" }}>{EEI_COMMUNITY.desc}</p>
 
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14, marginBottom: 16 }}>
               {EEI_COMMUNITY.boxes.map((b, i) => (
-                <div key={i} style={{ background: "#f3ece0", borderRadius: 6, padding: "16px 18px" }}>
-                  <p style={{ fontSize: ".62rem", fontWeight: 700, letterSpacing: ".03em", color: "#a3854f", marginBottom: 8 }}>{b.tag}</p>
-                  <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: b.long ? "1.2rem" : "1.5rem", fontWeight: 700, color: "#8a6a3d", marginBottom: 4, lineHeight: 1.3 }}>
+                <div key={i} style={{ background: "#ede5d6", borderRadius: 6, padding: "16px 18px" }}>
+                  <p style={{ fontSize: ".65rem", fontWeight: 700, letterSpacing: ".04em", color: "#7a5a2d", marginBottom: 8 }}>{b.tag}</p>
+                  <p style={{ fontFamily: "'Cormorant Garamond',serif", fontSize: b.long ? "1.25rem" : "1.6rem", fontWeight: 700, color: "#6b4c1e", marginBottom: 6, lineHeight: 1.3 }}>
                     {b.num}
-                    <span style={{ fontSize: ".75rem", fontWeight: 600, marginLeft: 4 }}>{b.unit}</span>
+                    <span style={{ fontSize: ".78rem", fontWeight: 600, marginLeft: 4 }}>{b.unit}</span>
                   </p>
-                  <p style={{ fontSize: ".68rem", color: "#6b5436", lineHeight: 1.5 }}>
+                  <p style={{ fontSize: ".7rem", color: "#5a4228", lineHeight: 1.55, fontWeight: 500 }}>
                     {b.desc.split("<br />").map((part, pi, parts) => (
                       <span key={pi}>{part}{pi < parts.length - 1 && <br />}</span>
                     ))}
@@ -827,7 +847,10 @@ export default function Portfolio() {
               ))}
             </div>
 
-            <p style={{ fontSize: ".68rem", color: "#7a7a72", lineHeight: 1.6 }}>{EEI_COMMUNITY.detail}</p>
+            <p style={{ fontSize: ".71rem", color: "#5a5248", lineHeight: 1.65 }}>
+              <b style={{ color: "#3a3428", fontWeight: 700 }}>{EEI_COMMUNITY.detail.split(": ")[0]}:</b>{" "}
+              {EEI_COMMUNITY.detail.split(": ").slice(1).join(": ")}
+            </p>
           </div>
         </div>
       </Slide>
